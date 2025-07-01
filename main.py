@@ -101,8 +101,6 @@ class MainWindow(QWidget):
         palette = self.palette()
         palette.setColor(QPalette.ColorRole.Window, QColor(bg_color))
         self.setPalette(palette)
-        self.page_home.setText(f"Привет, " + os.getlogin())
-        self.stack.setCurrentWidget(self.page_home)
 
     def show_installers(self):
         layout = QVBoxLayout()
